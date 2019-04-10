@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+
+#margem{    
+    width: 30%;
+    background-color: blue;
+    margin: 70px auto 0px;
+    border: 1px solid white;
+    animation-name: borda-calc;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borda-calc{
+    from {
+        box-shadow: 0px 0px 2px 2px white;
+    }
+    to {
+        box-shadow: 0px 0px 5px 5px white;
+    }
+}
+
+#calc-titulo{
+    background-color: orange;
+    padding: 14px;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.calculadora{
+    display: block;
+    position: relative;
+    background-color: rgba(0,3,0,.8);
+}
+
+#visor{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+    background-color: olivedrab;
+    
+}
+
+#coluna{
+    background-color: pink;
+    width: 70%;
+    height: 64%;
+    margin: 14px auto 14px;
+    padding-bottom: 20px;
+}
+
+#coluna input{
+    position: relative;
+    padding: 10px;
+    margin-left: 10%;
+    font-weight: bold;
+}
